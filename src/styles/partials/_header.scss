@@ -67,8 +67,11 @@
         transition: all 0.8s;
         background: $background;
         li a {
-            transition: all 0.8s;
+            transition: all 0.3s;
             color: $text;
+            &:hover {
+                color: $accent;
+            }
         }
     }
 }
