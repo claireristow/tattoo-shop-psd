@@ -1,0 +1,30 @@
+// MAIN
+
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.halfFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        width: 50%;
+    }
+    svg {
+        width: 40%;
+        fill: $accent;
+    }
+}
+
+.discover a {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: lowercase;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}

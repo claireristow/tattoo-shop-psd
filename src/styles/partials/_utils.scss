@@ -14,6 +14,9 @@ body {
     background: $background;
     padding: 3rem;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img {
@@ -21,7 +24,6 @@ img {
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -31,6 +33,29 @@ li {
     margin: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0 0 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    line-height: 1.4;
+}
+
 a {
     text-decoration: none;
+    color: $text;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.wrapper {
+    margin: 0 6rem;
+}
+
+.smallCircle {
+    background: $accent;
+    border-radius: 50%;
+    height: 0.3rem;
+    width: 0.3rem;
 }

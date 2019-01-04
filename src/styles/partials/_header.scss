@@ -1,89 +1,77 @@
 
-.mainPage {
+// NAVIGATION
+
+label[for=toggle] {
+    text-transform: lowercase;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
 }
 
-// NAV BAR
-
-label[for=toggle] svg {
+.menuCircle {
+    margin-right: 2rem;
     border-radius: 50%;
-    background: $accent;
-    fill: $background;
     height: 6.5rem;
     width: 6.5rem;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
     cursor: pointer;
+    background: $accent;
+    svg {
+        position: absolute;
+        display: flex;
+        padding: 1.5rem;
+        height: 6.5rem;
+        width: 6.5rem;
+        align-items: center;
+        transition: transform .5s;
+    }
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 5rem;
-    padding: 1rem;
-    margin-right: 3rem;
-    z-index: 9;
+.openMenu {
+    fill: $background;
 }
 
-// HAMBURGER MENU
+.closeMenu {
+    fill: rgba(0,0,0,0);
+}
 
 .menu {
-    display: flex;
+    z-index: 10;
+    list-style-type: none;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    display: none;
     flex-direction: column;
-	background: $background;
-	list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap;
+	background: rgba(0,0,0,0);
 	padding: 0;
 	margin: 0;
-	font-size: 4rem;
-	width: 30%;
-	position: fixed;
-	top: 0;
-	right: -30%;
-	bottom: 0;
-	z-index: 10;
-    transition: all .5s;
-    label[for=toggle] {
-        padding: 2rem;
-        font-size: 3rem;
-    }
-    a {
-        color: white;
-        padding: 2rem;
-        border-bottom: 0.1rem solid grey;
-        display: block;
-        &:hover {
-            background: $accent;
+    font-size: 6rem;
+    li {
+        height: 25%;
+        text-transform: lowercase;
+        a {
+            color: rgba(0,0,0,0);
+            padding: 2rem;
+            display: block;
         }
     }
 }
 
-input#toggle:checked + ul.menu {
-	right: 0;
-}
-
-input#toggle:checked ~ header {
-	left: -30%;
-	transition: all .5s;
-}
-
-input#toggle {
-	display: none;
-}
-
-// MAIN
-
-.halfFlex {
+.showFlex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        width: 50%;
-    }
-    svg {
-        width: 40%;
-        fill: $accent;
+    &, .menu {
+        transition: all 0.8s;
+        background: $background;
+        li a {
+            transition: all 0.8s;
+            color: $text;
+        }
     }
 }
