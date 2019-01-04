@@ -16,7 +16,6 @@
 
     <header>
         <nav class="hamburgerNav">
-            <input type="checkbox" id="toggle" name="toggle">
             <ul class="menu">
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -27,7 +26,8 @@
                 <li><a href="news.html">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <label for="toggle">Frequently Asked Questions
+            <div class="hamburger">
+                <h3>Frequently Asked Questions</h3>
                 <div class="menuCircle">
                     <svg class="openMenu" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -50,70 +50,63 @@
                         </g>
                     </svg>
                 </div>
-            </label>
-
+            </div>
         </nav>
     </header>
 
     <main class="wrapper">
         <div class="halfFlex">
             <ul class="questions">
-                <li id="questionItem safety">Are tattoos and piercings safe?</li>
-                <li id="questionItem search">Where can I find pictures of tattoos?</li>
-                <li id="questionItem time">How much are your tattoos and how long will it take?</li>
-                <li id="questionItem plan">How should I plan for a larger tattoo?</li>
-                <li id="questionItem care">How should I take care of my tattoo?</li>
-                <li id="questionItem minors">Do you give tattoos or piercings to minors?</li>
-                <li id="questionItem cost">What is the cost breakdown for tattoos of various sizes?</li>
-                <li id="questionItem equipment">Do you reuse any of the tattoo equipment?</li>
+                <li class="questionItem active" id="safety">Are tattoos and piercings safe?</li>
+                <li class="questionItem" id="search">Where can I find pictures of tattoos?</li>
+                <li class="questionItem"id="time">How long does the tattoo process take?</li>
+                <li class="questionItem" id="plan">How should I plan for a larger tattoo?</li>
+                <li class="questionItem" id="care">How should I take care of my tattoo?</li>
+                <li class="questionItem" id="minors">Do you give tattoos or piercings to minors?</li>
+                <li class="questionItem" id="cost">What is the cost breakdown for tattoos of various sizes?</li>
+                <li class="questionItem" id="equipment">Do you reuse any of the tattoo equipment?</li>
             </ul>
             <div class="questionExpanded">
-                <div class="oneQuestion show" id="safety">
+                <div class="oneQuestion safety show">
                     <h2>Are tattoos and piercings safe?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate, perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
                 </div>
-                <div class="oneQuestion" id="search">
+                <div class="oneQuestion search">
                     <h2>Where can I find pictures of tattoos?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur illum sed quas veritatis.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
                         perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
                 </div>
-                <div class="oneQuestion" id="time">
+                <div class="oneQuestion time">
                     <h2>How much are your tattoos and how long will it take?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis consectetur vel assumenda odit ut quaerat suscipit ipsum!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi assumenda deleniti quasi mollitia minus!</p>
                 </div>
-                <div class="oneQuestion" id="plan">
+                <div class="oneQuestion plan">
                     <h2>How should I plan for a larger tattoo?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, ad incidunt commodi, eveniet tempore nemo sed, obcaecati officia laboriosam minima velit ratione magnam est dolores minus hic tempora? Optio, consequuntur.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="oneQuestion" id="care">
+                <div class="oneQuestion care">
                     <h2>How should I take care of my tattoo?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non hic quos consequuntur? Eum itaque quisquam nulla ad delectus unde repellendus veritatis eveniet!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="oneQuestion" id="minors">
+                <div class="oneQuestion minors">
                     <h2>Do you give tattoos or piercings to minors?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sint veniam dolore odit eum?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus ratione dolorem minima! Ducimus voluptate, explicabo quaerat repellat soluta quidem delectus quisquam praesentium quasi mollitia beatae!</p>
                 </div>
-                <div class="oneQuestion" id="cost">
+                <div class="oneQuestion cost">
                     <h2>What is the cost breakdown for tattoos of various sizes?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur commodi explicabo enim recusandae aspernatur vel eligendi fugiat deleniti.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem vel suscipit.</p>
                 </div>
-                <div class="oneQuestion" id="equipment">
+                <div class="oneQuestion equipment">
                     <h2>Do you reuse any of the tattoo equipment?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae porro amet modi iure nihil cupiditate,
-                        perspiciatis voluptates neque in tempora impedit maxime rerum. Esse nihil cupiditate eveniet tempore odit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi quo non architecto tenetur dolor?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit iure alias culpa! Inventore, eligendi ipsa.</p>
                 </div>
             </div>
         </div>

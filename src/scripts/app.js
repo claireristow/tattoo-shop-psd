@@ -14,11 +14,23 @@ app.events = function() {
     })
 
     // when a faq is clicked
-    if (document.getElementById('questionItem')) {
-        document.getElementById('questionItem').addEventListener('click', function(e) {
-            const clickedItem = this;
-            console.log(clickedItem);
-        })
+    if (document.querySelector('.questionItem')) {
+        console.log('question item is on the page')
+        const questionItems = document.getElementsByClassName('questionItem');
+        for(let i = 0; i < questionItems.length; i++) {
+            questionItems[i].addEventListener('click', function(e) {
+                e.preventDefault();
+                const questionId = this.getAttribute('id');
+
+                // unselected previous question
+                document.querySelector('.active').classList.remove('active');
+                document.querySelector('.show').classList.remove('show');
+
+                // select clicked question
+                document.getElementById(questionId).classList.add('active');
+                document.querySelector(`.${questionId}`).classList.add('show');
+            })
+        }
     }
 
 
