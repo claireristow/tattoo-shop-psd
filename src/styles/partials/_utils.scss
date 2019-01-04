@@ -1,0 +1,36 @@
+
+$accent: #f82749;
+$background: #191919;
+$text: #ffffff;
+
+html {
+    font-size: 63.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Josefin Slab', serif;
+    color: $text;
+    background: $background;
+    padding: 3rem;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

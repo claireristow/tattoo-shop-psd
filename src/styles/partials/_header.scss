@@ -1,0 +1,89 @@
+
+.mainPage {
+    display: flex;
+    flex-direction: row;
+}
+
+// NAV BAR
+
+label[for=toggle] svg {
+    border-radius: 50%;
+    background: $accent;
+    fill: $background;
+    height: 6.5rem;
+    width: 6.5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    padding: 1rem;
+    margin-right: 3rem;
+    z-index: 9;
+}
+
+// HAMBURGER MENU
+
+.menu {
+    display: flex;
+    flex-direction: column;
+	background: $background;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-size: 4rem;
+	width: 30%;
+	position: fixed;
+	top: 0;
+	right: -30%;
+	bottom: 0;
+	z-index: 10;
+    transition: all .5s;
+    label[for=toggle] {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    a {
+        color: white;
+        padding: 2rem;
+        border-bottom: 0.1rem solid grey;
+        display: block;
+        &:hover {
+            background: $accent;
+        }
+    }
+}
+
+input#toggle:checked + ul.menu {
+	right: 0;
+}
+
+input#toggle:checked ~ header {
+	left: -30%;
+	transition: all .5s;
+}
+
+input#toggle {
+	display: none;
+}
+
+// MAIN
+
+.halfFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        width: 50%;
+    }
+    svg {
+        width: 40%;
+        fill: $accent;
+    }
+}
