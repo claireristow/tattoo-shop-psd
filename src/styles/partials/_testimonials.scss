@@ -4,35 +4,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .quotes {
-        width: 33%;
-        div {
-            display: none;
-        }
-        .show {
-            display: block;
-        }
+}
+
+.quotes {
+    width: 33%;
+    div {
+        display: none;
     }
-    .testimonialImages {
-        padding: 0 6rem;
-        width: 33%;
-        .imageContainer {
-            display: none;
-        }
-        .show {
-            display: block;
-        }
+    .show {
+        display: block;
     }
-    .testimonialNames {
-        width: 33%;
-        ul {
-            list-style-type: none;
-            li {
-                padding: 1rem 0;
-                cursor: pointer;
-                &:hover {
-                    color: $accent;
-                }
+}
+
+.testimonialImages {
+    padding: 0 6rem;
+    width: 33%;
+    .imageContainer {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
+
+.testimonialNames {
+    width: 33%;
+    ul {
+        list-style-type: none;
+        li {
+            padding: 1rem 0;
+            cursor: pointer;
+            &:hover {
+                color: $accent;
             }
         }
     }

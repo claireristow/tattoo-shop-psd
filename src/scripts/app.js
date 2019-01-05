@@ -13,7 +13,7 @@ app.events = function() {
         }
     })
 
-    // when a faq is clicked
+    // FAQ events
     if (document.querySelector('.questionItem')) {
         const questionItems = document.getElementsByClassName('questionItem');
 
@@ -36,27 +36,31 @@ app.events = function() {
         }
     }
 
+    // testimonial events
     if (document.querySelector('.testimonialsMain')) {
 
         const names = document.getElementsByClassName(`name`);
         
+        // add an event listener to all the testimonial names
         for (let i = 0; i < names.length; i++) {
             names[i].addEventListener('click', function() {
                 const clicked = this.getAttribute('class');
                 const clickedName = clicked.split(' ')[1];
-                console.log(clickedName)
                 
                 // unselect previous testimonial
+                const previousQuote = document.getElementsByClassName('quote show');
+                previousQuote[0].classList.remove('show');
+
+                const previousImage = document.getElementsByClassName('imageContainer show');
+                previousImage[0].classList.remove('show');
+
                 document.querySelector('.active').classList.remove('active');
-                const previousElements = document.getElementsByClassName('show');
-                for (let i = 0; i < previousElements.length; i++) {
-                    previousElements[i].classList.remove('show');
-                }
 
                 // select clicked testimonial
                 document.querySelector(`.testimonialNames .${clickedName}`).classList.add('active');
+                
                 const currentElements = document.getElementsByClassName(clickedName);
-                for (let i = 0; i < currentElements.length; i++) {
+                for (let i = 0; i < currentElements.length - 1; i++) {
                     currentElements[i].classList.add('show');
                 }
             }) // end of event listener
