@@ -7,7 +7,7 @@
 }
 
 .quotes {
-    width: 33%;
+    width: 35%;
     div {
         display: none;
     }
@@ -18,7 +18,7 @@
 
 .testimonialImages {
     padding: 0 6rem;
-    width: 33%;
+    width: 45%;
     .imageContainer {
         display: none;
     }
@@ -28,12 +28,13 @@
 }
 
 .testimonialNames {
-    width: 33%;
+    width: 20%;
     ul {
         list-style-type: none;
         li {
             padding: 1rem 0;
             cursor: pointer;
+            font-size: 1.8rem;
             &:hover {
                 color: $accent;
             }
