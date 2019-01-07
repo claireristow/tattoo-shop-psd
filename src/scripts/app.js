@@ -1,6 +1,24 @@
 
 const app = {};
 
+app.carousel = function() {
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        draggable: '>1',
+        freeScroll: true,
+        // wrapAround: true
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity('.main-carousel', {
+        // options
+    });
+}
+
 app.events = function() {
     
     // when a hamburger nav is clicked
@@ -72,6 +90,7 @@ app.events = function() {
 
 app.init = function() {
     app.events();
+    app.carousel();
 }; 
 
 (function() {
