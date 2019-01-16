@@ -43,7 +43,7 @@
     bottom: 10%;
     left: 0;
     display: none;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 	background: rgba(0,0,0,0);
@@ -51,9 +51,10 @@
 	margin: 0;
     font-size: 6rem;
     li {
-        height: 25%;
+        width: 50%;
         text-transform: lowercase;
         a {
+            text-align: center;
             color: rgba(0,0,0,0);
             padding: 2rem;
             display: block;
@@ -74,4 +75,20 @@
             }
         }
     }
+}
+
+@media(max-width: 960px) {
+
+    .menu {
+        font-size: 4rem;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    header {
+        margin-bottom: 2rem;
+    }
+
 }

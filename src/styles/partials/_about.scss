@@ -49,3 +49,64 @@
         filter: grayscale(100%);
     }
 }
+
+@media(max-width:1240px) {
+
+    .tripleFlex {
+        .aboutBlurb {
+            width: 75%;
+        }
+        .aboutStats {
+            width: 25%;
+            padding: 0;
+        }
+    }
+
+    .aboutStats ul .statNum p {
+        font-size: 4rem;
+    }
+
+
+    .aboutImage {
+        display: none;
+        width: 0;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .tripleFlex {
+        flex-direction: column;
+        .aboutBlurb {
+            width: 100%;
+        }
+        .aboutStats {
+            width: 100%;
+        }
+    }
+
+    .aboutStats ul {
+        display: flex;
+        li {
+            width: calc(100% / 3);
+        }
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .aboutStats ul {
+        flex-direction: column;
+        align-items: center;
+        // border: 0.1rem solid $accent;
+        li {
+            width: 50%;
+            .statNum {
+                color: $accent;
+            }
+        }
+    }
+
+}

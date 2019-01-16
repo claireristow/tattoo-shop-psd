@@ -72,3 +72,23 @@ a {
     margin-top: 1rem;
     text-transform: lowercase;
 }
+
+@media(max-width: 700px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    body {
+        padding: 0.5rem;
+    }
+
+}
