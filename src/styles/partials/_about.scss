@@ -95,6 +95,15 @@
 
 }
 
+@media(max-width: 670px) {
+
+    .tripleFlex .aboutBlurb {
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+}
+
 @media(max-width:500px) {
 
     .aboutStats ul {

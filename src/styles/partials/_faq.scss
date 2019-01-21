@@ -29,3 +29,20 @@
 .active {
     color: $accent;
 }
+
+@media(max-width: 900px) {
+
+    .mainFaq .halfFlex {
+        flex-direction: column;
+        .questions {
+            width: 100%;
+            text-align: center;
+        }
+        .questionExpanded {
+            width: 100%;
+            margin-top: 3rem;
+            text-align: center;
+        }
+    }
+
+}

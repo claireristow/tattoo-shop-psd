@@ -7,12 +7,19 @@ footer {
     align-items: center;
 }
 
+@media(max-width: 1030px) {
+
+    footer {
+        margin: 3rem 0;
+    }
+
+}
+
 @media(max-width:500px) {
 
     footer {
         width: 100%;
         justify-content: center;
-        padding: 3rem 0;
         .smallCircle {
             margin: 0 3rem;
         }

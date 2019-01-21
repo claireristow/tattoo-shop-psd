@@ -29,3 +29,37 @@
     font-size: 1.8rem;
     letter-spacing: 0.3rem;
 }
+
+@media(max-width: 600px) {
+
+    .mainHome  {
+        align-items: center;
+        .halfFlex {
+            display: block;
+            position: relative;
+        }
+        .discover {
+            margin-top: 2rem;
+        }
+    }
+
+    .halfFlex {
+        h1 {
+            width: 100%;
+            z-index: 2;
+            text-align: center;
+        }
+        svg {
+            z-index: -1;
+            fill: darken($color: $accent, $amount: 25);
+            width: 100%;
+            height: 50rem;
+            position: absolute;
+            top: -16rem;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+}

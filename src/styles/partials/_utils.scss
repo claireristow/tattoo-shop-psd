@@ -85,10 +85,18 @@ a {
 
 }
 
+@media(max-width: 600px) {
+    
+    .discover .smallCircle {
+        background: white;
+    }
+
+}
+
 @media(max-width: 500px) {
 
     body {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
 }

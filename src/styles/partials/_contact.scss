@@ -1,6 +1,7 @@
 
 
 .contactMain .halfFlex {
+    display: flex;
     align-items: flex-start;
 }
 
@@ -66,4 +67,78 @@ input, textarea {
     iframe {
         width: 100%;
     }
+}
+
+@media(max-width: 1215px) {
+
+    .formContainer {
+        padding-right: 0;
+    }
+
+    .contactDetails {
+        padding: 0 3rem;
+    }
+
+    .contactFlex {
+        width: 60%;
+    }
+
+    .map {
+        width: 40%;
+    }
+
+}
+
+@media(max-width: 1030px) {
+
+    .contactMain > .halfFlex {
+        flex-direction: column;
+    }
+
+    .contactFlex, .map {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .formContainer {
+        padding: 0 2.5rem 0 0;
+    }
+    
+    .contactDetails {
+        padding: 0 0 0 2.5rem;
+    }
+
+}
+
+@media(max-width:750px) {
+
+    .formContainer {
+        padding: 0 1rem 0 0;
+    }
+    
+    .contactDetails {
+        padding: 0 0 0 1rem;
+    }
+
+}
+
+@media(max-width: 560px) {
+
+    .contactFlex .halfFlex {
+        flex-direction: column;
+    }
+
+    .formContainer {
+        padding: 0;
+    }
+    
+    .contactDetails {
+        padding: 0;
+    }
+
+    .map iframe {
+        height: 30rem;
+        width: 100%;
+    }
+
 }
