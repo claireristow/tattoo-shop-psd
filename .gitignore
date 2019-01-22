@@ -1,4 +1,4 @@
-public/styles
-public/scripts
+# public/styles
+# public/scripts
 node_modules/
 .DS_Store
