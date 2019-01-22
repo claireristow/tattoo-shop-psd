@@ -40,8 +40,10 @@
         }
         .questionExpanded {
             width: 100%;
+            padding-top: 3rem;
             margin-top: 3rem;
             text-align: center;
+            border-top: 0.8rem dotted $accent;
         }
     }
 

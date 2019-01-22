@@ -4,10 +4,8 @@ const app = {};
 app.carousel = function() {
     var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity(elem, {
-        // options
-        // cellAlign: 'left',
         contain: true,
-        // draggable: '>1'
+        draggable: '>1',
         wrapAround: true
     });
 

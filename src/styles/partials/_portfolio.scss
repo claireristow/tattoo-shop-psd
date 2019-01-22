@@ -15,6 +15,8 @@
     height: inherit;
     width: 45rem;
     overflow: hidden;
+    // border: 0.5rem solid $background;
+    margin: 0 0.25rem;
     img {
         height: inherit;
         object-fit: cover;
@@ -22,6 +24,30 @@
     }
 }
 
-.arrows {
-    display: flex;
+@media(max-width: 1000px) {
+
+    .wrapper.portfolioMain {
+        margin: 0;
+    }
+
+    .main-carousel {
+        height: 35rem;
+    }
+
+    .carousel-cell {
+        width: 35rem;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .main-carousel {
+        height: 25rem;
+    }
+
+    .carousel-cell {
+        width: 25rem;
+    }
+
 }
