@@ -5,11 +5,10 @@ app.carousel = function() {
     var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity(elem, {
         // options
-        cellAlign: 'left',
+        // cellAlign: 'left',
         contain: true,
-        draggable: '>1',
-        freeScroll: true,
-        // wrapAround: true
+        // draggable: '>1'
+        wrapAround: true
     });
 
     // element argument can be a selector string

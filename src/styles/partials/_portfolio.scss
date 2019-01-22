@@ -9,15 +9,17 @@
 .main-carousel {
     width: 100%;
     height: 45rem;
-    // background: $accent;
 }
 
-.carousel-cell img {
+.carousel-cell {
     height: inherit;
-    object-fit: cover;
+    width: 45rem;
     overflow: hidden;
-    display: block;
-    filter: grayscale(100%);
+    img {
+        height: inherit;
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
 }
 
 .arrows {
