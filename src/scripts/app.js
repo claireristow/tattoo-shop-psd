@@ -80,6 +80,31 @@ app.events = function() {
                 }
             }) // end of event listener
         } // end of for loop
+
+        const namesNav = document.querySelector('.namesNav');
+
+        namesNav.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('clicked!');
+            const namesList = document.querySelector('.testimonialNames ul');
+            if (namesList.classList.contains('show')) {
+                namesList.classList.remove('show');
+            } else {
+                namesList.classList.add('show');
+            }
+
+            const names = document.getElementsByClassName(`name`);
+
+            // add an event listener to all the testimonial names
+            for (let i = 0; i < names.length; i++) {
+                names[i].addEventListener('click', function () {
+                    console.log('should close now')
+                    document.querySelector('.testimonialNames ul').classList.remove('show');
+                })
+            }
+
+        })
+
     } // end of testimonial events
 
 

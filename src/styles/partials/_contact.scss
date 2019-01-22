@@ -133,12 +133,15 @@ input, textarea {
     }
     
     .contactDetails {
-        padding: 0;
+        padding: 0.5rem 0;
+        border-top: 0.5rem dotted $accent;
+        border-bottom: 0.5rem dotted $accent;
     }
 
     .map iframe {
         height: 30rem;
         width: 100%;
+        margin-bottom: 3rem;
     }
 
 }
