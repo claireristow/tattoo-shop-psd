@@ -8,12 +8,6 @@ app.carousel = function() {
         draggable: '>1',
         wrapAround: true
     });
-
-    // element argument can be a selector string
-    //   for an individual element
-    var flkty = new Flickity('.main-carousel', {
-        // options
-    });
 }
 
 app.events = function() {
@@ -26,7 +20,7 @@ app.events = function() {
         } else {
             menu.classList.add('showFlex');
         }
-    })
+    });
 
     // FAQ events
     if (document.querySelector('.questionItem')) {
@@ -47,7 +41,7 @@ app.events = function() {
                 // select clicked question
                 document.getElementById(questionId).classList.add('active');
                 document.querySelector(`.${questionId}`).classList.add('show');
-            })
+            });
         }
     }
 
@@ -78,7 +72,7 @@ app.events = function() {
                 for (let i = 0; i < currentElements.length - 1; i++) {
                     currentElements[i].classList.add('show');
                 }
-            }) // end of event listener
+            }); // end of event listener
         } // end of for loop
 
         const namesNav = document.querySelector('.namesNav');
@@ -90,7 +84,7 @@ app.events = function() {
                 namesList.classList.remove('show');
             } else {
                 namesList.classList.add('show');
-            }
+            };
 
             const names = document.getElementsByClassName(`name`);
 
@@ -98,14 +92,10 @@ app.events = function() {
             for (let i = 0; i < names.length; i++) {
                 names[i].addEventListener('click', function () {
                     document.querySelector('.testimonialNames ul').classList.remove('show');
-                })
+                });
             }
-
-        })
-
+        });
     } // end of testimonial events
-
-
 }
 
 app.init = function() {
