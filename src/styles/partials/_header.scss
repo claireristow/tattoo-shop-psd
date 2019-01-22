@@ -38,7 +38,7 @@
     z-index: 10;
     list-style-type: none;
     position: absolute;
-    top: 15%;
+    top: 14%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -81,6 +81,14 @@
 
     .menu {
         font-size: 4rem;
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .menu li {
+        width: 100%;
     }
 
 }

@@ -113,7 +113,7 @@
     .testimonialsMain {
         flex-direction: column-reverse;
         position: relative;
-        padding-bottom: 7rem;
+        padding-bottom: 2rem;
     }
 
     .individualTestimonial, .testimonialNames {
@@ -129,7 +129,7 @@
         display: none;
         background: $background; 
         position: absolute;
-        top: 10%;
+        top: 5%;
         right: 0;
         bottom: -5%;
         left: 0;
